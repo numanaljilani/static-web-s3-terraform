@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error Page</title>
+  <style>
+    /* CSS for basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #777;
+      margin-bottom: 30px;
+    }
+    .error-message {
+      font-size: 1.5em;
+      color: #ff5757;
+    }
+    /* Animation */
+    .error-message {
+      animation: shake 0.5s ease-in-out infinite alternate;
+    }
+    @keyframes shake {
+      from {
+        transform: translateX(-5px);
+      }
+      to {
+        transform: translateX(5px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>Oops!</h1>
+      <p>Something went wrong.</p>
+      <p class="error-message">Error 404: Page Not Found</p>
+    </div>
+  </div>
+</body>
+</html>
+
